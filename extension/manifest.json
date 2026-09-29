@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Verification Prompt Helper for Discord",
+  "version": "0.1.0",
+  "description": "Restore Discord's missing native email re-verification prompt. Manual, local, and limited to supported client builds.",
+  "minimum_chrome_version": "111",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Discord verification helper",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}

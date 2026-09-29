@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discord verification helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">LOCAL · MANUAL · OPEN SOURCE</p>
+    <h1>Missing verification prompt?</h1>
+    <p>Check whether Discord is asking you to re-verify your email, then open its own verification screen.</p>
+    <div id="status" role="status" aria-live="polite">Open your signed-in Discord web tab, then check its requirement.</div>
+    <dl id="details" hidden>
+      <dt>Client bundle</dt><dd id="bundle"></dd>
+      <dt>Required action</dt><dd id="requirement"></dd>
+    </dl>
+    <button id="inspect" type="button">Check requirement</button>
+    <button id="open" type="button" disabled>Open email re-verification</button>
+    <p class="notice">This opens a native Discord screen, not an account bypass. You complete verification yourself. The helper does not send an email or submit a code.</p>
+    <footer>
+      <a href="https://support.discord.com/hc/en-us/requests/new" target="_blank" rel="noopener noreferrer">Discord Support ↗</a>
+      <span>Independent; not affiliated with Discord.</span>
+    </footer>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

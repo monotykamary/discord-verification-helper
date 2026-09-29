@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+:root { color-scheme: dark; font: 14px/1.55 system-ui, sans-serif; color: #eef0f7; background: #141721; }
+body { margin: 0; width: 370px; }
+main { padding: 24px; }
+h1 { font-size: 23px; line-height: 1.2; letter-spacing: -0.6px; margin: 8px 0 14px; }
+p { color: #b7bfd0; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1.3px; color: #aeb6ff; }
+#status { padding: 14px; margin: 20px 0 16px; border: 1px solid #394158; border-radius: 8px; background: #202534; }
+#status[data-tone="success"] { border-color: #5fc7a6; }
+#status[data-tone="warning"] { border-color: #ddb46a; }
+button { display: block; width: 100%; padding: 11px 12px; margin: 9px 0; border: 1px solid #727ab9; border-radius: 7px; background: #292f4b; color: #fff; font: inherit; font-weight: 650; cursor: pointer; }
+#open { background: #5865d8; }
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+button:focus-visible, a:focus-visible { outline: 3px solid #bec6ff; outline-offset: 3px; }
+.notice, footer { font-size: 12px; }
+footer { display: grid; gap: 10px; margin-top: 20px; color: #919bb2; }
+a { color: #b7bfff; }
+dl { font-size: 11px; margin: 12px 0; }
+dt { color: #a2acc2; }
+dd { margin: 0 0 8px; overflow-wrap: anywhere; font-family: ui-monospace, monospace; }
+[hidden] { display: none !important; }
